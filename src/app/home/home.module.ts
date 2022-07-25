@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
 
+import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
+import { HeaderComponent } from './components/header/header.component';
+import { PopoverComponent } from './components/popover/popover.component';
 
 
 @NgModule({
@@ -12,8 +14,12 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage,
+    HeaderComponent,
+    PopoverComponent,
+  ],
 })
-export class HomePageModule {}
+export class HomePageModule { }
